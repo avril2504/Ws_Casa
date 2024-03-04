@@ -80,7 +80,7 @@ public class Casa {
 		}
 	}
 	
-
+	//Metodo 1:
 	/**
 	 * Este metodo calcula los metros cuadrdos de la casa utilizando
 	 * los metros cuadrados de la habitacion y del jardin
