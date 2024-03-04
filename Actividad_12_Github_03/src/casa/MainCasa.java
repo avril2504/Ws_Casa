@@ -27,6 +27,14 @@ public class MainCasa {
 		h1.setNombre("Aleksandron");
 		h1.setTipoHabitacion(TipoHabitacion.COCINA);
 		Casa c2 = new Casa(d2, 1000, true, 50,null, h2);
+		
+		c1.esChalet();
+		c1.calcular_metros_cuadrados_1();
+		c1.precioConIva();
+		
+		c2.esChalet();
+		c2.calcular_metros_cuadrados_1();
+		c2.precioConIva();
 	}
 
 }
