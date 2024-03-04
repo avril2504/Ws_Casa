@@ -1,6 +1,6 @@
 package casa;
 
 public class Jardin {
-	double metroCuadrado;
-	int numeroPlantas;
+	private double metroCuadrado;
+	private int numeroPlantas;
 }
