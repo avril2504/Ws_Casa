@@ -91,7 +91,11 @@ public class Casa {
 		public void calcular_metros_cuadrados_1() {
 			double suma = 0.0;
 			suma += this.habitacion.getMetrosCuadrados();
-			suma += this.jardin.getMetroCuadrado();
+			if(this.jardin == null) {
+				suma += 0.0;
+			}else {
+				suma += this.jardin.getMetroCuadrado();
+			}
 			suma = this.metrosCuadrados;
 			System.out.println("Los metros cuadrados totales de la casa son: " + suma);
 		}
