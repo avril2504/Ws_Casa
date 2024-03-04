@@ -68,6 +68,7 @@ public class Casa {
 	}
 	
 	//Metodos:
+
 	//Metodo 2:
 	public boolean esChalet () {
 		if (this.jardin != null) {
@@ -79,6 +80,18 @@ public class Casa {
 		}
 	}
 	
+	//Metodo 3:
+	public void precioConIva() {
+		if (this.segundaMano == true) {
+			double precioSegundaMano = precio * 0.05;
+			this.precio= precioSegundaMano;
+		}else {
+			double precioNueva = precio * 0.10;
+			this.precio = precioNueva;
+		}
+			
+	}
+
 	
 
 }

@@ -27,6 +27,15 @@ public class Habitacion {
 		return "Habitacion [nombre=" + nombre + ", metrosCuadrados=" + metrosCuadrados + ", tipoHabitacion="
 				+ tipoHabitacion + "]";
 	}
+	public Habitacion(String nombre, double metrosCuadrados, TipoHabitacion tipoHabitacion) {
+		super();
+		this.nombre = nombre;
+		this.metrosCuadrados = metrosCuadrados;
+		this.tipoHabitacion = tipoHabitacion;
+	}
+	public Habitacion() {
+		super();
+	}
 	
 
 }
