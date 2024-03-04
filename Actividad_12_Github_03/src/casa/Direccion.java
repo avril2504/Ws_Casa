@@ -42,6 +42,9 @@ public class Direccion {
 		this.codigo_postal = codigo_postal;
 		this.tipoVia = tipoVia;
 	}
+	public Direccion() {
+		super();
+	}
 	
 	
 }
