@@ -68,7 +68,16 @@ public class Casa {
 	}
 	
 	//Metodos:
-	
+	//Metodo 2:
+	public boolean esChalet () {
+		if (this.jardin != null) {
+			System.out.println("La casa es un chalet");
+			return true;
+		}else {
+			System.out.println("La casa no es un chalet");
+			return false;
+		}
+	}
 	
 	
 
