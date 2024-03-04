@@ -77,10 +77,12 @@ public class Casa {
 	public void precioConIva() {
 		if (this.segundaMano == true) {
 			double precioSegundaMano = precio * 0.05;
-			this.precio= precioSegundaMano;
+			double precioSegundaManoTotal = precioSegundaMano + precio;
+			this.precio= precioSegundaManoTotal;
 		}else {
 			double precioNueva = precio * 0.10;
-			this.precio = precioNueva;
+			double precioNuevaTotal = precioNueva + precio;
+			this.precio = precioNuevaTotal;
 		}
 			
 	}
