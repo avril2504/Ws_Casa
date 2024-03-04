@@ -68,43 +68,20 @@ public class Casa {
 	}
 	
 	//Metodos:
-
-	//Metodo 2:
-	public boolean esChalet () {
-		if (this.jardin != null) {
-			System.out.println("La casa es un chalet");
-			return true;
-		}else {
-			System.out.println("La casa no es un chalet");
-			return false;
-		}
-	}
 	
-
-	/**
-	 * Este metodo calcula los metros cuadrdos de la casa utilizando
-	 * los metros cuadrados de la habitacion y del jardin
-	 */
-	public void calcular_metros_cuadrados_1() {
-		double suma = 0.0;
-		suma += this.habitacion.getMetrosCuadrados();
-		suma += this.jardin.getMetroCuadrado();
-		suma = this.metrosCuadrados;
-		System.out.println("Los metros cuadrados totales de la casa son: " + suma);
-	}
-
 	//Metodo 3:
 	public void precioConIva() {
 		if (this.segundaMano == true) {
 			double precioSegundaMano = precio * 0.05;
-			this.precio= precioSegundaMano;
+			double precioSegundaManoTotal = precioSegundaMano + precio;
+			this.precio= precioSegundaManoTotal;
 		}else {
 			double precioNueva = precio * 0.10;
-			this.precio = precioNueva;
+			double precioNuevaTotal = precioNueva + precio;
+			this.precio = precioNuevaTotal;
 		}
 			
 	}
-
 	
 
 }
