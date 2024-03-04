@@ -107,10 +107,12 @@ public class Casa {
 			double precioSegundaMano = precio * 0.05;
 			double precioSegundaManoTotal = precioSegundaMano + precio;
 			this.precio= precioSegundaManoTotal;
+			System.out.println("La casa vale: " + this.precio);
 		}else {
 			double precioNueva = precio * 0.10;
 			double precioNuevaTotal = precioNueva + precio;
 			this.precio = precioNuevaTotal;
+			System.out.println("La casa vale: " + this.precio);
 		}
 			
 	}

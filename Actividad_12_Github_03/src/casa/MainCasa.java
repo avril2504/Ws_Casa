@@ -15,7 +15,7 @@ public class MainCasa {
 		Jardin j1 = new Jardin();
 		j1.setMetroCuadrado(200);
 		j1.setNumeroPlantas(800);
-		Casa c1 = new Casa(d1, 10000000, false, 50000, j1, h1);
+		Casa c1 = new Casa(d1, 1000000, false, 50000, j1, h1);
 		
 		Direccion d2 = new Direccion();
 		d2.setCodigo_postal(28044);
