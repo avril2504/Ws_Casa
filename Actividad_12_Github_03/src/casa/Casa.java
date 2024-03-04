@@ -29,6 +29,10 @@ public class Casa {
 		this.habitacion = habitacion;
 	}
 	
+	public Casa() {
+		super();
+	}
+
 	//Setters and Getters
 	public Direccion getDireccion() {
 		return direccion;
