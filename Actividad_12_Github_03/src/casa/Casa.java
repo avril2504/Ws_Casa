@@ -1,5 +1,7 @@
 package casa;
 
+import java.util.ArrayList;
+
 public class Casa {
 	
 	//Atributos
@@ -8,25 +10,25 @@ public class Casa {
 	private boolean segundaMano;
 	private double metrosCuadrados;
 	private Jardin jardin;
-	private Habitacion habitacion;
+	private ArrayList <Habitacion> listaHabitaciones;
 	
 	//To String
 	@Override
 	public String toString() {
 		return "Casa [direccion=" + direccion + ", precio=" + precio + ", segundaMano=" + segundaMano
-				+ ", metrosCuadrados=" + metrosCuadrados + ", jardin=" + jardin + ", habitacion=" + habitacion + "]";
+				+ ", metrosCuadrados=" + metrosCuadrados + ", jardin=" + jardin + ", habitacion=" + listaHabitaciones + "]";
 	}
 	
 	//Constructor
 	public Casa(Direccion direccion, double precio, boolean segundaMano, double metrosCuadrados, Jardin jardin,
-			Habitacion habitacion) {
+			 ArrayList <Habitacion> listaHabitaciones) {
 		super();
 		this.direccion = direccion;
 		this.precio = precio;
 		this.segundaMano = segundaMano;
 		this.metrosCuadrados = metrosCuadrados;
 		this.jardin = jardin;
-		this.habitacion = habitacion;
+		this.listaHabitaciones = listaHabitaciones;
 	}
 	
 	public Casa() {
@@ -64,14 +66,15 @@ public class Casa {
 	public void setJardin(Jardin jardin) {
 		this.jardin = jardin;
 	}
-	public Habitacion getHabitacion() {
-		return habitacion;
+	public ArrayList<Habitacion> getListaHabitaciones() {
+		return listaHabitaciones;
 	}
-	public void setHabitacion(Habitacion habitacion) {
-		this.habitacion = habitacion;
+
+	public void setListaHabitaciones(ArrayList<Habitacion> listaHabitaciones) {
+		this.listaHabitaciones = listaHabitaciones;
 	}
-	
-	//Metodos:
+
+		//Metodos:
 	//Metodo 2:
 		public boolean esChalet () {
 			if (this.jardin != null) {
@@ -90,7 +93,9 @@ public class Casa {
 		 */
 		public void calcular_metros_cuadrados_1() {
 			double suma = 0.0;
-			suma += this.habitacion.getMetrosCuadrados();
+			for (Habitacion habitacion : this.listaHabitaciones) {
+				suma += habitacion.getMetrosCuadrados();
+			}
 			if(this.jardin == null) {
 				suma += 0.0;
 			}else {
